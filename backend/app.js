@@ -31,7 +31,7 @@ const limiter = rateLimit({
     max: 2000
 })
 app.use(limiter)
-const URL = 'mongodb+srv://Mehedi:mehedi@cluster0.5bhxotd.mongodb.net/Student'
+const URL = 'mongodb://localhost:27017/StudentData'
 //Database connection
 mongoose.connect(URL)
 .then(() => {
